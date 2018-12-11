@@ -4,18 +4,12 @@
 
 <title>Estás en madrid central?</title>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="estilos.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
 <style>
-#map {
-  height: 100%;
-  width: 100%;
-}
 /* Optional: Makes the sample page fill the window. */
-html, body {
-  height: 100%;
-  margin: 5;
-  padding: 0;
-}
-
+#map{}
 #poi { 
 width:40%
 }
@@ -23,16 +17,39 @@ width:40%
 </head>
 
 <body>
-<h1>Juan dale duro</h1>
-<input type="text" placeholder="buscar calle o lugar" name="poi" id="poi" />
-<button name="buscar">Buscar</button>
-
-<div id="map"></div>
-<script language="javascript" src="central.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJnTTkpvi7k2aoZvcUQ5tTipw9G7DuKMQ&libraries=geometry&callback=initMap" async defer></script>
-
-
-
+<header>
+  <img id="logo_img" src="https://cdn0.iconfinder.com/data/icons/prohibited-and-warning/78/Prohibition_icons-09-512.png">
+    <h1>Madrid central</h1>
+    
+</header>
+<div id="contenedor_pagina_1" class="contenedor_pagina">
+  <div id="adv1" class="publi">Publi</div>
+  <h2>texto bienvenida</h2p>
+  <h3>¿Qué calificación tiene tu coche?</h3>
+  <div id="buscador_calle">
+    <form action="">
+      <input type="radio" name="pegatina" value="np">Sin pegatina<br>
+      <input type="radio" name="pegatina" value="pc">Pegatina C<br>
+      <input type="radio" name="pegatina" value="pb">Pegatina B<br>
+      <input type="radio" name="pegatina" value="pa">Pegatina A<br>
+      <input type="submit" value="Submit">
+    </form>
+    <h3>¿Qué calle te gustaria saber si está permitida?</h3>
+    <input type="text" placeholder="buscar calle o lugar" name="poi" id="poi" />
+    <button name="buscar">Buscar</button>
+  </div>
+  <div id="adv2" class="publi">Publi2</div>
+</div>
+<div id="contenedor_pagina_1" class="contenedor_pagina">
+  <div id="resultado"><h2>Tu destino está permitido</h2></div>
+  <div id="adv3" class="publi">Publi3</div>
+    <div id="contenedor_map">
+    <div id="map"></div>
+    <script language="javascript" src="central.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJnTTkpvi7k2aoZvcUQ5tTipw9G7DuKMQ&libraries=geometry&callback=initMap" async defer></script> 
+  </div>
+  <div id="adv2" class="publi">Publi2</div>
+</div>
 </body>
 
 
