@@ -1,0 +1,52 @@
+html,body{
+    height: 100%;
+    margin: 5;
+    padding: 0 0 0;
+    margin: 0;
+    font-family: Roboto;
+    font-weight: 400;
+    text-align: center;
+}
+body { padding: 70px 0 0;}
+h1, h2, h3{font-weight: 300;}
+h1{}
+h2{}
+h3{}
+header {
+    background-color: #bfc5d2;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    box-sizing: border-box;
+}
+header h1 {
+    font-weight: 300;
+    display: block;
+    margin: 0;
+    vertical-align: bottom;
+    display: inline-block;
+}
+#logo_img{
+    width: 10%;
+    height: auto;
+}
+.contenedor_pagina {
+    border: 1px dashed green;
+    margin: 3px 2px;
+    height: calc(100vh - 70px - 6px);
+}
+#map {
+    height: 55vh;
+    width: 100%;
+}
+#buscador_calle{background-color: #d8f7db;
+    margin: 0.5em 0;
+    padding: 0.5em 0;
+}
+.publi {
+    margin: 0.5em 0;
+    background-color: #ffaa0b;
+}
