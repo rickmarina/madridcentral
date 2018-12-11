@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome Directory",
-            "url": "C:\\central\\madridcentral\\web.html",
+            "url": "C:\\Git\\madridcentral\\web.html",
             "webRoot": "${workspaceFolder}"
         },
         {
